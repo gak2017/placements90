@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="newstyles/stylesMResult.css">
+        <link rel="stylesheet" href="newstyles/styles.css">
+        <title>-Check your GPA-</title>
+    </head>
+    <script>
+var os=0;
+var a=0,d=0,a1=0,d1=0,i=0,j=0,n=0,year=0,sem=0,l=0;
+		var s1=[ "ENGLISH","ENGINEERING MATHEMATICS","ENGINEERING PHYSICS","COMPUTER PROGRAMMING","ENGINEERING GRAPHICS","ENGLISH LANGUAGE LAB","ENGINEERING PHYSICS LAB","cp COMPUTER PROGRAMMING LAB"];
+		var s2=["COMPUTATIONAL MATHEMATICS","APPLIED PHYSICS","APPLIED CHEMISTRY","BASIC ELECTRICAL AND ELECTRONICAL ENGINEERING","DATA STRUCTURES","APPLIED CHEMISTRY LAB","DATA STRUCTURES LAB","ENGINEERING WORKSHOP"];
+		var s3=[ "ADVANCED CALCULUS","DIGITAL LOGIC DESIGN","OBJECT ORIENTED PROGRAMMING THROUGH JAVA","DESIGN AND ANALYSIS OF ALGORITHMS","MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE","COMPUTER ORGANIZATION","OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB","DESIGN AND ANALYSIS OF ALGORITHMS LAB"];
+		var s4=["PROBABILITY AND STATISTICS","WEB TECHNOLOGIES","DATABASE MANAGEMENT SYSTEMS","OPERATING SYSTEMS","FORMAL LANGUAGES AND AUTOMATA THEORY","SCRIPTING LANGUAGE","WEB TECHNOLOGIES LAB","DATABASE MANAGEMENT SYSTEMS LAB","OPERATING SYSTEMS LAB"];
+		var s5=["COMPUETR NETWORK","SOFTWARE ENGINEERING AND MODELING","LINUX PROGRAMMING","COMPILER DESIGN","PROFESSIONAL ELECTIVE","OPEN ELECTIVE","COMPUETR NETWORK LAB","LINUX PROGRAMMING LAB","COMPILER DESIGN LAB"];
+		var s6=["ENGINEERING ECONOMICS AND ACCOUNTANCY","MICROPROCESSORS AND MICROCONTROLLERS","MACHINE LEARNING","INFORMATION SECURITY","PROFESSIONAL ELECTIVE","OPEN ELECTIVE","ENGLISH LAB","MICROPROCESSORS AND MICROCONTROLLERS LAB","SEMINAR"];
+		var s7=["MANAGEMENT FUNDAMENTALS","PYTHON PROGRAMMING","DATAMINING","INTERNET OF THINGS","PROFESSIONAL ELECTIVE","OPEN ELECTIVE","PYTHON LAB","DATAMINING LAB","MINI PROJECT"];
+		var s8=["PROFESSIONAL ELECTIVE-1","PROFESSIONAL ELECTIVE-2","OPEN ELECTIVE","ENTREPRENEURSHIP","VIVA-VOICE","MAJOR PROJECT" ];
+		var c1=[ 3,4,4,3,4,2,2,2 ];
+		var c2=[ 4,3,4,3,4,2,2,2 ];
+		var c3=[ 3,3,3,4,4,3,2,2 ];
+		var c4=[ 3,3,3,3,3,3,2,2,2 ];
+		var c5=[ 3,3,3,3,3,3,2,2,2 ];
+		var c6=[ 2,3,3,3,4,4,1,2,2 ];
+		var c7=[ 2,3,3,3,4,3,2,2,2 ];
+		var c8=[ 3,3,3,1,2,12 ];
+		var b=new Array();
+		var str=new Array();
+		var c=new Array();
+		var po=new Array();
+		var g=new Array();
+		var pf=new Array();
+		var mark1=0,mark2=0,mark3=0,mark4=0,mark5=0,mark6=0,mark7=0,mark8=0,mark9=0;
+function fun1()
+{
+
+
+	 a=document.getElementById("y");
+	d=a.options[a.selectedIndex].value;
+	
+
+	 a1=document.getElementById("semm");
+	d1=a1.options[a1.selectedIndex].value;
+	
+	year=Number(d);
+	sem=Number(d1);
+	if(year!=1 )
+		{
+			if((year==2)  && (sem==1))
+			{
+				os=(year+1);
+			}
+			else if((year==3)  && (sem==1))
+			{
+				os=year+2;
+			}
+			else if((year==4)  && (sem==1))
+			{
+				os=year+3;
+			}
+		else
+		{
+			os=(sem*year);
+		}
+	
+			
+		}
+		else
+		{
+			os=(sem*year);
+		}
+		
+fun();
+	
+	
+	
+	
+}
+	function fun()
+		{
+		
+	
+		if(os==1)
+		{
+			n=c1.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c1[i];
+			 }
+			 for(j=0;j<n;j++)
+			 {
+				 str[j]=s1[j];
+			 }
+		}
+		else if(os==2)
+		{
+			 n=c2.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c2[i];
+			 }
+			 for(j=0;j<n;j++)
+			 {
+				 str[j]=s2[j];
+			 }
+		}
+		else if(os==3)
+		{
+			 n=c3.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c3[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s3[j];
+			 }
+		}
+		else if(os==4)
+		{
+			 n=c4.length;
+			  for(i=0;i<n;i++)
+			 {
+				 b[i]=c4[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s4[j];
+			 }
+		}
+		else if(os==5)
+		{
+			 n=c5.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c5[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s5[j];
+			 }
+		}
+		else if(os==6)
+		{
+			 n=c6.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c6[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s6[j];
+			 }
+		}
+		else if(os==7)
+		{
+			 n=c7.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c7[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s7[j];
+			 }
+		}
+		else if(os==8)
+		{
+			 n=c8.length;
+			 for(i=0;i<n;i++)
+			 {
+				 b[i]=c8[i];
+			 }
+			  for(j=0;j<n;j++)
+			 {
+				 str[j]=s8[j];
+			 }
+			 for(j;j<9;j++)
+			 {
+				str[j]=null;
+			 }
+		}
+		document.getElementById("sh").innerHTML=os;
+		document.getElementById("sh1").innerHTML=n;
+		document.getElementById("n1").innerHTML=str[0];
+		document.getElementById("n2").innerHTML=str[1];
+		document.getElementById("n3").innerHTML=str[2];
+		document.getElementById("n4").innerHTML=str[3];
+		document.getElementById("n5").innerHTML=str[4];
+		document.getElementById("n6").innerHTML=str[5];
+		document.getElementById("n7").innerHTML=str[6];
+		document.getElementById("n8").innerHTML=str[7];
+		document.getElementById("n9").innerHTML=str[8];
+		
+		
+		
+		}
+		function add()
+		{
+		fun();
+		mark1=Number(document.getElementById("m1").value);
+		
+		mark2=Number(document.getElementById("m2").value);
+		mark3=Number(document.getElementById("m3").value);
+		mark4=Number(document.getElementById("m4").value);
+		mark5=Number(document.getElementById("m5").value);
+		mark6=Number(document.getElementById("m6").value);
+		mark7=Number(document.getElementById("m7").value);
+		mark8=Number(document.getElementById("m8").value);
+		mark9=Number(document.getElementById("m9").value);
+	var a=[ mark1,mark2,mark3,mark4,mark5,mark6,mark7,mark8,mark9 ];
+	
+		
+		
+		for(var k=0;k<n;k++)
+		{
+			
+			
+			
+			if(a[k]>=90)
+			{
+				po[k]=10;
+				pf[k]='p';
+				g[k]='O';
+				
+				
+			}
+			else if(a[k]>=80 && a[k]<90)
+			{
+				po[k]=9;
+				pf[k]='p';
+				g[k]='a+'
+				
+			}
+			else if(a[k]>=70 && a[k]<80)
+			{
+				po[k]=8;
+				pf[k]='p';
+				g[k]='a';
+			}
+			else if(a[k]>=60 && a[k]<70)
+			{
+				po[k]=7;
+				pf[k]='p';
+				g[k]='b+';
+			}
+			else if(a[k]>=50 && a[k]<60)
+			{
+				po[k]=6;
+				pf[k]='p';
+				g[k]='b';
+			}
+			else if(a[k]>=40 && a[k]<50)
+			{
+				po[k]=5;
+				pf[k]='p';
+				g[k]='c+';
+			}
+			else if(a[k]<40)
+			{
+				po[k]=0;
+				pf[k]='F';
+				g[k]='F';
+			}
+			
+		}
+		
+		document.getElementById("pf1").innerHTML=pf[0];
+		document.getElementById("pf2").innerHTML=pf[1];
+		document.getElementById("pf3").innerHTML=pf[2];
+		document.getElementById("pf4").innerHTML=pf[3];
+		document.getElementById("pf5").innerHTML=pf[4];
+		document.getElementById("pf6").innerHTML=pf[5];
+		document.getElementById("pf7").innerHTML=pf[6];
+		document.getElementById("pf8").innerHTML=pf[7];
+		document.getElementById("pf9").innerHTML=pf[8];
+		
+		document.getElementById("p1").innerHTML=g[0];
+		document.getElementById("p2").innerHTML=g[1];
+		document.getElementById("p3").innerHTML=g[2];
+		document.getElementById("p4").innerHTML=g[3];
+		document.getElementById("p5").innerHTML=g[4];
+		document.getElementById("p6").innerHTML=g[5];
+		document.getElementById("p7").innerHTML=g[6];
+		document.getElementById("p8").innerHTML=g[7];
+		document.getElementById("p9").innerHTML=g[8];
+		
+		document.getElementById("g1").innerHTML=po[0];
+		document.getElementById("g2").innerHTML=po[1];
+		document.getElementById("g3").innerHTML=po[2];
+		document.getElementById("g4").innerHTML=po[3];
+		document.getElementById("g5").innerHTML=po[4];
+		document.getElementById("g6").innerHTML=po[5];
+		document.getElementById("g7").innerHTML=po[6];
+		document.getElementById("g8").innerHTML=po[7];
+		document.getElementById("g9").innerHTML=po[8];
+		
+		var sum=0,p=0;
+		for(var r=0;r<n;r++)
+		{
+		po[r]=Number(po[r]);
+		b[r]=Number(b[r]);
+		}
+		
+		for(var l=0;l<n;l++)
+		{
+			sum=sum+(po[l]*b[l]);
+			p=p+b[l];
+		}
+		var x=Number(sum/p);
+		document.getElementById("total").innerHTML="Your SGPA  "+x;
+		var w=document.getElementById("num").value;
+		var z1=document.getElementById("sg1").value;
+		var z2=document.getElementById("sg2").value;
+		var z3=document.getElementById("sg3").value;
+		var z4=document.getElementById("sg4").value;
+		var z5=document.getElementById("sg5").value;
+		var z6=document.getElementById("sg6").value;
+		var z7=document.getElementById("sg7").value;
+		var y=new Array();
+		y=[ z1,z2,z3,z4,z5,z6,z7 ];
+		w=Number(w);
+		for(var v=0;v<w;v++)
+		{
+			
+			y[v]=Number(y[v]);
+		}
+		var sum1=0;
+		for(var r=0;r<w;r++)
+		{
+			sum1=sum1+y[r];
+		
+		}
+		var u=(sum1+x)/(w+1);
+		document.getElementById("cgpa").innerHTML=u;
+		}
+		
+		
+		function re()
+		{
+		
+		document.getElementById("pf1").innerHTML=null;
+		document.getElementById("pf2").innerHTML=null;
+		document.getElementById("pf3").innerHTML=null;
+		document.getElementById("pf4").innerHTML=null;
+		document.getElementById("pf5").innerHTML=null;
+		document.getElementById("pf6").innerHTML=null;
+		document.getElementById("pf7").innerHTML=null;
+		document.getElementById("pf8").innerHTML=null;
+		document.getElementById("pf9").innerHTML=null;
+		
+		document.getElementById("p1").innerHTML=null;
+		document.getElementById("p2").innerHTML=null;
+		document.getElementById("p3").innerHTML=null;
+		document.getElementById("p4").innerHTML=null;
+		document.getElementById("p5").innerHTML=null;
+		document.getElementById("p6").innerHTML=null;
+		document.getElementById("p7").innerHTML=null;
+		document.getElementById("p8").innerHTML=null;
+		document.getElementById("p9").innerHTML=null;
+		
+		document.getElementById("g1").innerHTML=null;
+		document.getElementById("g2").innerHTML=null;
+		document.getElementById("g3").innerHTML=null;
+		document.getElementById("g4").innerHTML=null;
+		document.getElementById("g5").innerHTML=null;
+		document.getElementById("g6").innerHTML=null;
+		document.getElementById("g7").innerHTML=null;
+		document.getElementById("g8").innerHTML=null;
+		document.getElementById("g9").innerHTML=null;
+		
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+	
+
+</script>
+    <body >
+        <div class="navBar">
+            &ensp;&ensp;<a href="index.html">Home</a>&ensp;&ensp;
+            <a href="pdf.html">PDF</a>&ensp;&ensp;
+            <a href="Vocabulary.html">Vocabulary</a>&ensp;&ensp;
+            <a href="synopsis.html">Synopsis</a>&ensp;&ensp;
+            <a href="NewQuiz.html">Quiz</a>&ensp;&ensp;
+            <a href="Mockresult.html">MockResults</a>&ensp;&ensp;
+            <a href="News.html">News</a>&ensp;&ensp;
+            <a href="CRT.html">CRT</a>&ensp;&ensp;
+            <a href="contact.html">Contact us</a>&ensp;&ensp;
+            <a href="About.html">About</a>
+        </div>
+    <div class="container" align="center">
+        <img src="images/gaknew.png" class="image" align="center">
+        <hr>
+        
+        <h1>Enter the below mentioned details to calculate your CGPA</h1>
+        <!--<h2><sup>By GAK</sup></h2>-->
+        <form id="f1">
+            <h3>Year &nbsp;&nbsp;
+            <select id="y" class="Year" onchange="fun1()">
+                <option id="optYear">select year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+        Sem&nbsp;&nbsp;<select id="semm" class="Sem" onchange="fun1()">
+                <option>select sem</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+
+            </select>
+                </h3>
+        </form>
+        <br>
+        <table border="1"  align="center" class="Tables">
+            <tr class="tr">
+                <th >Subjects</th>
+                <th>Marks</th>
+                <th>Pass/Fail</th>
+                <th>Grades</th>
+                <th>Grades points</th>
+            </tr>
+            <tr class="tr"> 
+
+                <td><p id="n1"></td>
+                <td><input type="text" id="m1" class="input"></td>
+                <td><p id="pf1"></td>
+                <td><p id="p1"></td>
+                <td><p id="g1"></td>
+
+            </tr>
+            <tr class="tr"> 
+                <td><p id="n2"></td>
+                <td><input type="text" id="m2" class="input"></td>
+                <td><p id="pf2"></td>
+                <td><p id="p2"></td>
+                <td><p id="g2"></td>
+            </tr>
+            <tr class="tr">
+                <td><p id="n3"></td>
+                <td><input type="text" id="m3" class="input"></td>
+                <td><p id="pf3"></td>
+                <td><p id="p3"></td>
+                <td><p id="g3"></td>
+            </tr>
+            <tr class="tr">
+                <td><p id="n4"></td>
+                <td><input type="text" id="m4" class="input"></td>
+                <td><p id="pf4"></td>
+                <td><p id="p4"></td>
+                <td><p id="g4"></td>
+            </tr>
+            <tr class="tr">
+                <td><p id="n5"></td>
+                <td><input type="text" id="m5" class="input"></td>
+                <td><p id="pf5"></td>
+                <td><p id="p5"></td>
+                <td><p id="g5"></td>
+            </tr>
+            <tr class="tr">
+                <td><p id="n6"></td>
+                <td><input type="text" id="m6" class="input"></td>
+                <td><p id="pf6"></td>
+                <td><p id="p6"></td>
+                <td><p id="g6"></td>
+            </tr>
+            <tr class="tr">
+                <td><p id="n7"></td>
+                <td><input type="text" id="m7" class="input"></td>
+                <td><p id="pf7"></td>
+                <td><p id="p7"></td>
+                <td><p id="g7"></td>
+
+            </tr>
+            <tr class="tr"> 
+
+                <td><p id="n8"></td>
+                <td><input type="text" id="m8" class="input"></td>
+                <td><p id="pf8"></td>
+                <td><p id="p8"></td>
+                <td><p id="g8"></td>
+            </tr>
+            <tr class="tr"> 
+                <td><p id="n9" ></td>
+                <td><input type="text" id="m9" class="input"></td>
+                <td><p id="pf9"></td>
+                <td><p id="p9"></td>
+                <td><p id="g9"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" value="CLICK HERE" onclick="add()" class="button">&nbsp;&nbsp;
+        <input type="button" value="REFRESH" onclick="re()" class="button">
+        
+        
+        
+        <div><H3 id="sh"><p>Semester :</p></H3></div>
+        <H4>Number of Subjects<h2 id="sh1"></h2></H4>
+
+        <p id="arr"></p>
+        <p id="total"></p>
+        <br><br><h3>Enter Number of  previous SGPA's</h3>
+        <input type="text" id="sg" placeholder="Number of SGPA's" class="input"><br/><br/>
+        <input type="text" id="sg1" placeholder="1" class="input">
+        <input type="text" id="sg2" placeholder="2" class="input">
+        <input type="text" id="sg3" placeholder="3" class="input">
+        <input type="text" id="sg4" placeholder="4" class="input"><br><br>
+        <input type="text" id="sg5" placeholder="5" class="input">
+        <input type="text" id="sg6" placeholder="6" class="input">
+        <input type="text" id="sg7" placeholder="7" class="input"><br>
+        <br>
+        <input type="button" value="For CGPA" onclick="add()" class="button">
+        <h2>Your CGPA: <p id="cgpa" ></p>
+        </h2>
+        <br><br><br>
+        <footer class="footerMK">
+            <a href=""><img class="icon" src="https://img.icons8.com/cute-clipart/64/000000/facebook.png"/></a>&ensp;
+            <a href=""><img class="icon" src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"/></a><br>
+                Copyrights&copy; 2020 GAK<span>:</span> Designed by GAK
+            </footer>
+        </div>
+    </body>
+</html>

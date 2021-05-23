@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>-Your Result-</title>
+        <link rel="stylesheet" href="newstyles/styles.css">
+        <!--<script src="script.js"></script>-->
+    </head>
+    <body class="bodyIndex">
+        <div class="navBar">
+            &ensp;&ensp;<a href="index.html">Home</a>&ensp;&ensp;
+            <a href="pdf.html">PDF</a>&ensp;&ensp;
+            <a href="Vocabulary.html">Vocabulary</a>&ensp;&ensp;
+            <a href="synopsis.html">Synopsis</a>&ensp;&ensp;
+            <a href="NewQuiz.html">Quiz</a>&ensp;&ensp;
+            <a href="Mockresult.html">MockResults</a>&ensp;&ensp;
+            <a href="News.html">News</a>&ensp;&ensp;
+            <a href="CRT.html">CRT</a>&ensp;&ensp;
+            <a href="contact.html">Contact us</a>&ensp;&ensp;
+            <a href="About.html">About</a>
+        </div>
+        <div class="mainContainerFinal">
+            <div class="container1">
+            <div class="empty"></div>
+            <nav class="innerDiv" style="font-size: 20px;">
+                <p>Correct: <span id="resultApp"></span>
+                    <script>
+                        document.getElementById("resultApp").innerHTML=localStorage.getItem("opC");
+                    </script>
+                </p>
+                <p>Wrong: <span id="resultReas"></span>
+                    <script>
+                        document.getElementById("resultReas").innerHTML=localStorage.getItem("opW");
+                    </script>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--<table align="center">
+<tr>
+<td></td>
+<td>
+<input type="button" value="submit" onclick="total()" align="center">
+<input type="button" value="refresh" onclick="window.location.reload()" align="center">
+
+</td></tr>
+</table>
+                <p id="correct"></p>
+<p id="wrong"> </p>
+                </p>-->
+                    <p style="font-size: 25px">Thank You!</p>
+            </nav>
+                    <p style="font-size: 19px">For Answers <a href="Day-2%20.pdf" class="KeyAnc" download="Day-2Key.pdf">Click here</a></p> &ensp;<br>
+            
+            
+        </div>
+        </div>
+        <div class="afterIndex"><hr></div>
+        <footer>Copyrights&copy; 2020 GAK<span>:</span> Designed by GAK</footer>
+    </body>
+</html>

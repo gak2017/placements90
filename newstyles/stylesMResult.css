@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    /*background-color: #F4F4F4;*/
+    background-color:darkgray;
+    padding: 0px;
+}
+.image{
+    /*padding: 9px;*/
+    margin-top: 30px;
+    height: 120px;
+    width: auto; 
+}
+p{
+    font-size: 20px;
+}
+h3,h2{
+    font-size: 20px;
+}
+h4{
+    font-size: 22px;
+}
+table{
+    border-color: black;
+    border-width: 1.5px;
+}
+.tr{
+    width: 200px;
+    height: 30px
+}
+th,td{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    /*padding: 1px;*/
+    border-color: black;
+    border-width: 1.5px;
+}
+.input{
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    border-color: black;
+    border-width: 1.5px;
+}
+#sg{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.Year{
+    font-size: 18px; 
+    
+}
+.Sem{
+    font-size: 18px;
+}
+.button{
+    background-color:darkgray;
+    color: black;
+    padding: 6px;
+    text-align: center;
+    font-size-adjust: auto;
+    font-size: 20px;
+    border: none;
+    font-family:fantasy;
+    box-shadow: 2px 2px 2px 2px ;
+    
+}
+.container{
+    margin: 0px auto;
+    margin-top: 60px;
+    /*background-color: white;*/
+    width: 1200px;
+    font-family: cursive,sans-serif;
+    box-shadow: 5px 5px 5px 5px ;
+    background-color:aliceblue;
+    border-left-color: darkslategrey;
+    border-bottom-width: thick;
+}
+/*Hovers*/
+.button:hover{
+    color:white;
+}
+footer{
+    background-color:darkgrey;
+    color: black;
+    font-size: 20px;
+    text-align:center;
+    font-family: cursive,sans-serif;
+    padding: 0px 25px 0px 25px;
+}

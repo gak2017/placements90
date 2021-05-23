@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>-Quiz-</title>
+        <link rel="stylesheet" href="newstyles/styles.css">
+        <script>
+
+var i=0,j=0,co=0,w=0;
+var a=new Array();
+var b=[ "4:3",30,15,121,"fri","wed",19,121516,6400,112,"vij",22,10,1/8,20,"book","imp","beak","hate","biased" ];
+function fun1(clicked)
+{
+	a[0]=document.getElementById(clicked).value;
+	
+	
+}
+function fun2(clicked)
+{
+	a[1]=document.getElementById(clicked).value;
+	
+	}
+
+function fun3(clicked)
+{
+	a[2]=document.getElementById(clicked).value;
+	
+	
+}
+
+function fun4(clicked)
+{
+	a[3]=document.getElementById(clicked).value;
+	
+	
+}
+
+function fun5(clicked)
+{
+	a[4]=document.getElementById(clicked).value;
+	
+	}
+
+function fun6(clicked)
+{
+	a[5]=document.getElementById(clicked).value;
+	
+	
+}
+
+function fun7(clicked)
+{
+	a[6]=document.getElementById(clicked).value;
+	
+	
+}
+
+function fun8(clicked)
+{
+	a[7]=document.getElementById(clicked).value;
+	
+	
+}
+
+function fun9(clicked)
+{
+	a[8]=document.getElementById(clicked).value;
+	
+	
+}
+function fun10(clicked)
+{
+	a[9]=document.getElementById(clicked).value;
+	
+}
+function fun11(clicked)
+{
+a[10]=document.getElementById(clicked).value;
+}
+function fun12(clicked)
+{
+a[11]=document.getElementById(clicked).value;
+}
+function fun13(clicked)
+{
+a[12]=document.getElementById(clicked).value;
+}
+function fun14(clicked)
+{
+a[13]=document.getElementById(clicked).value;
+}
+function fun15(clicked)
+{
+a[14]=document.getElementById(clicked).value;
+}
+function fun16(clicked)
+{
+a[15]=document.getElementById(clicked).value;
+}
+function fun17(clicked)
+{
+a[16]=document.getElementById(clicked).value;
+}
+function fun18(clicked)
+{
+a[17]=document.getElementById(clicked).value;
+}
+function fun19(clicked)
+{
+a[18]=document.getElementById(clicked).value;
+}
+ function fun20(clicked)
+{
+a[19]=document.getElementById(clicked).value;
+}  
+
+
+
+
+
+
+
+function total()
+{
+	for(var k=0;k<20;k++)
+	{
+		if(a[k]==b[k])
+		{
+		co=co+1;
+		}
+		else
+		{
+		w=w+1;
+		}
+	}
+}
+	
+
+function to()
+{
+    total();
+     localStorage.setItem("opC",co);
+    localStorage.setItem("opW",w);
+
+  
+	if((co+w)==20)
+	{
+	co=0;
+	w=0;
+	}
+}	
+    </script> 
+    </head>
+    <body class="bodyIndex">
+        <div class="navBar">
+            &ensp;&ensp;<a href="index.html">Home</a>&ensp;&ensp;
+            <a href="pdf.html">PDF</a>&ensp;&ensp;
+            <a href="Vocabulary.html">Vocabulary</a>&ensp;&ensp;
+            <a href="synopsis.html">Synopsis</a>&ensp;&ensp;
+            <a href="NewQuiz.html">Quiz</a>&ensp;&ensp;
+            <a href="Mockresult.html">MockResults</a>&ensp;&ensp;
+            <a href="News.html">News</a>&ensp;&ensp;
+            <a href="CRT.html">CRT</a>&ensp;&ensp;
+            <a href="contact.html">Contact us</a>&ensp;&ensp;
+            <a href="About.html">About</a>
+        </div>
+        <div class="mainContainerQuiz">
+            <img class="Logo" src="images/gaknew.png">
+            <div class="QuizA">
+                <h2>Aptitude Questions</h2><br>
+                <table class="Aptitude" cellspacing="20">
+                <tr>
+                    <td>
+                        <ol start="1">
+                            <li style="text-align: left"> Two, trains, one from Howrah to Patna and the other from Patna to Howrah, start simultaneously. After they meet, the trains reach their destinations after 9 hours and 16 hours respectively. The ratio of their speeds is ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i1" id="i11" value="2:3"  onclick="fun1(this.id)" >&ensp;<label>2:3</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i1"  id="i12" value="4:3" onclick="fun1(this.id)">&ensp;<label>4:3</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i1" id="i13" value="6:7" onclick="fun1(this.id)">&ensp;<label>6:7</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i1" id="i14" value="9:16" onclick="fun1(this.id)">&ensp;<label>9:16</label>&nbsp;&nbsp;&nbsp;
+                                 <!--<img id="result" style="width:10px; height: 10px" src="mrec.jpg">-->
+                            </div>
+                    </ol>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <ol start="2">
+                            <li style="text-align: left">The angle of elevation of the sun, when the length of the shadow of a tree 3 times the height of the tree, is ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i2" id="i21" value="30" onclick="fun2(this.id)" >&ensp;<label>30</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i2"  id="i22" value="45" onclick="fun2(this.id)">&ensp;<label>45</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i2" id="i23" value="60" onclick="fun2(this.id)">&ensp;<label>60</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i2" id="i24" value="90" onclick="fun2(this.id)">&ensp;<label>90</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="3">
+                            <li style="text-align: left">A tank is filled by three pipes with uniform flow. The first two pipes operating simultaneously fill the tank in the s+me time during which the tank is filled by the third pipe alone. The second pipe fills the tank 5 hours faster than the first pipe and 4 hours slower than the third pipe. The time required by the first pipe is?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i3" id="i31" value="6" onclick="fun3(this.id)" >&ensp;<label>6 hrs</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i3"  id="i32" value="10" onclick="fun3(this.id)">&ensp;<lable>10 hrs</lable>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i3" id="i33" value="15" onclick="fun3(this.id)">&ensp;<label>15 hrs</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i3" id="i34" value="30" onclick="fun3(this.id)">&ensp;<label>30 hrs</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="4">
+                            <li style="text-align: left">A bank offers 5% compound interest calculated on half-yearly basis. A customer deposits Rs. 1600 e+ch on 1st January and 1st July of a year. At the end of the year, the amount he would have gained by way of interest is ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i4" id="i41" value="120" onclick="fun4(this.id)" >&ensp;<label>120</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i4"  id="i42" value="121" onclick="fun4(this.id)">&ensp;<label>121</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i4" id="i43" value="122" onclick="fun4(this.id)">&ensp;<label>122</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i4" id="i44" value="123" onclick="fun4(this.id)">&ensp;<label>123</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="5">
+                            <li style="text-align: left">It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010? ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i5" id="i51" value="sun" onclick="fun5(this.id)" >&ensp;<lable>Sunday</lable>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i5"  id="i52" value="sat" onclick="fun5(this.id)">&ensp;<label>Saturday</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i5" id="i53" value="fri" onclick="fun5(this.id)">&ensp;<label>Friday</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i5" id="i54" value="wed" onclick="fun5(this.id)">&ensp;<label>Wednesday</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="6">
+                            <li style="text-align: left">A watch which gains uniformly is 2 minutes low at noon on Monday and is 4 min. 48 sec fast at 2 p.m. on the following Monday. When was it correct ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i6" id="i61" value="tue" onclick="fun6(this.id)" >&ensp;<label>2pm on Tuesday</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i6"  id="i62" value="wed" onclick="fun6(this.id)">&ensp;<label>2pm on Wednesday</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i6" id="i63" value="thur" onclick="fun6(this.id)">&ensp;<label>2pm on Thursday</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i6" id="i64" value="fri" onclick="fun6(this.id)">&ensp;<label>2pm on Friday</label>&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="7">
+                            <li style="text-align: left">If log 2 = 0.30103, the number of digits in 2 is ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i7" id="i71" value="18" onclick="fun7(this.id)" >&ensp;<label>18</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i7"  id="i72" value="19" onclick="fun7(this.id)">&ensp;<label>19</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i7" id="i73" value="20" onclick="fun7(this.id)">&ensp;<label>20</label>&nbsp;&nbsp;
+                                <input type="radio"  name="i7" id="i74" value="21" onclick="fun7(this.id)">&ensp;<label>21</label>&nbsp;&nbsp;&nbsp;
+                                
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="8">
+                            <li style="text-align: left">Aman started a business investing Rs. 70,000. Rakhi joined him after six months with an amount of Rs.. 1,05,000 and Sagar joined them with Rs. 1.4 lakhs after another six months. The amount of profit earned should be distributed in what ratio among Aman, Rakhi and Sagar respectively, 3 years after Aman started the busines ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i8" id="i81" value="7610" onclick="fun8(this.id)" >&ensp;<label>7:6:10</label>&nbsp;&nbsp;&nbsp;            
+                                <input type="radio" name="i8"  id="i82" value="121516" onclick="fun8(this.id)">&ensp;<label>12:15:16</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i8" id="i83" value="424556" onclick="fun8(this.id)">&ensp;<label>42:45:56</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i8" id="i84" value="none" onclick="fun8(this.id)">&ensp;<label>cannot be determined</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="9">
+                            <li style="text-align: left"> How many bricks, e+ch me+suring 25 cm x 11.25 cm x 6 cm, will be needed to build a wall of 8 m x 6 m x 22.5 cm ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i9" id="i91" value="5600" onclick="fun9(this.id)" >&ensp;<label>5600</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i9"  id="i92" value="6000" onclick="fun9(this.id)">&ensp;<label>6000</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i9" id="i93" value="6400" onclick="fun9(this.id)">&ensp;<label>6400</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i9" id="i94" value="7200" onclick="fun9(this.id)">&ensp;<label>7200</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="10">
+                            <li style="text-align: left">40 % of 280 = ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i10" id="i101" value="112" onclick="fun10(this.id)" >&ensp;<label>112</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i10"  id="i102" value="116" onclick="fun10(this.id)">&ensp;<label>116</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i10" id="i103" value="115" onclick="fun10(this.id)">&ensp;<label>115</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i10" id="i104" value="120" onclick="fun10(this.id)">&ensp;<label>120</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                
+            </table>                
+            </div>
+            <div class="QuizR">
+                <h2>Reasoning Questions</h2><br>
+            <table class="Aptitude" cellspacing="20">
+                <tr>
+                    <td>
+                        <ol start="1">
+                            <li style="text-align: left">SCD, TEF, UGH, ____, WKL ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i11" id="i111" value="cmn"  onclick="fun11(this.id)" >&ensp;<label>CMN</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i11"  id="i112" value="uji" onclick="fun11(this.id)">&ensp;<label>UJI</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i11" id="i113" value="vij" onclick="fun11(this.id)">&ensp;<label>VIJ</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i11" id="i114" value="ijt" onclick="fun11(this.id)">&ensp;<label>IJT</label>&nbsp;&nbsp;&nbsp;
+                            </div>
+                    </ol>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <ol start="2">
+                            <li style="text-align: left">Look at this series: 36, 34, 30, 28, 24, â€¦ What number should come next ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i12" id="i121" value="22" onclick="fun12(this.id)" >&ensp;<label>22</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i12"  id="i122" value="26" onclick="fun12(this.id)">&ensp;<label>26</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i12" id="i123" value="23" onclick="fun12(this.id)">&ensp;<label>23</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i12" id="i124" value="20" onclick="fun12(this.id)">&ensp;<label>20</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="3">
+                            <li style="text-align: left">Look at this series: 7, 10, 8, 11, 9, 12, â€¦ What number should come next ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i13" id="i131" value="7" onclick="fun13(this.id)" >&ensp;<label>7</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i13"  id="i132" value="12" onclick="fun13(this.id)">&ensp;<label>12</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i13" id="i133" value="10" onclick="fun13(this.id)">&ensp;<label>10</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i13" id="i134" value="13" onclick="fun13(this.id)">&ensp;<label>13</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="4">
+                            <li style="text-align: left">Look at this series: 2, 1, (1/2), (1/4), ? What number should come next ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i14" id="i141" value="1/3" onclick="fun14(this.id)" >&ensp;<label>1/3</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i14"  id="i142" value="1/8" onclick="fun14(this.id)">&ensp;<label>1/8</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i14" id="i143" value="2/8" onclick="fun14(this.id)">&ensp;<label>2/8</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i14" id="i144" value="1/16" onclick="fun14(this.id)">&ensp;<label>1/16</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="5">
+                            <li style="text-align: left">Look at this series: 80, 10, 70, 15, 60, ? What number should come next ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i15" id="i151" value="20" onclick="fun15(this.id)" >&ensp;<label>20 years</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i15"  id="i152" value="25" onclick="fun15(this.id)">&ensp;<label>25 years</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i15" id="i153" value="30" onclick="fun15(this.id)">&ensp;<label>30 years</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i15" id="i154" value="50" onclick="fun15(this.id)">&ensp;<label>50 years</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="6">
+                            <li style="text-align: left">Which word does NOT belong with the others ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i16" id="i161" value="index" onclick="fun16(this.id)" >&ensp;<label>index</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i16"  id="i162" value="glossary" onclick="fun16(this.id)">&ensp;<label>gloassary</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i16" id="i163" value="chapter" onclick="fun16(this.id)">&ensp;<label>chapter</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i16" id="i164" value="book" onclick="fun16(this.id)">&ensp;<label>book</label>&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="7">
+                            <li style="text-align: left">Which word is the odd man out ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i17" id="i171" value="trivial" onclick="fun17(this.id)" >&ensp;<label>trivial</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i17"  id="i172" value="unimportant" onclick="fun17(this.id)">&ensp;<label>unimportant</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i17" id="i173" value="imp" onclick="fun17(this.id)">&ensp;<label>important</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i17" id="i174" value="insignificant" onclick="fun17(this.id)">&ensp;<label>insignificant</label>&nbsp;&nbsp;&nbsp;
+                                
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="8">
+                            <li style="text-align: left">Which word does NOT belong with the others ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i18" id="i181" value="wing" onclick="fun18(this.id)" >&ensp;<label>wing</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i18"  id="i182" value="fin" onclick="fun18(this.id)">&ensp;<label>fin</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i18" id="i183" value="beak" onclick="fun18(this.id)">&ensp;<label>beak</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i18" id="i184" value="rubber" onclick="fun18(this.id)">&ensp;<label>rubber</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="9">
+                            <li style="text-align: left">Which word is the odd man out ?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i19" id="i191" value="hate" onclick="fun19(this.id)" >&ensp;<label>hate</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i19"  id="i192" value="fondness" onclick="fun19(this.id)">&ensp;<label>fondness</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i19" id="i193" value="liking" onclick="fun19(this.id)">&ensp;<label>liking</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i19" id="i194" value="attachment" onclick="fun19(this.id)">&ensp;<label>attachment</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="10">
+                            <li style="text-align: left">Pick the odd man out?</li><br>
+                            <div class="inputs" style="float: left">
+                                <input type="radio" name="i20" id="i201" value="just" onclick="fun20(this.id)" >&ensp;<label>just</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="i20"  id="i202" value="fair" onclick="fun20(this.id)">&ensp;<label>fair</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i20" id="i203" value="equitable" onclick="fun20(this.id)">&ensp;<label>equitable</label>&nbsp;&nbsp;&nbsp;
+                                <input type="radio"  name="i20" id="i204" value="biased" onclick="fun20(this.id)">&ensp;<label>biased</label>&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                        </ol>
+                    </td>
+                </tr> 
+                
+            </table>            
+            </div>
+            <div class="QuizC">
+                <h2><u>Track the logic</u></h2>
+                <h3>1) Try this pattern:<br/><br/><br/><img src="images/pic1.jpg" style="width: auto; height: auto; float: inherit"></h3>
+            
+            <button class="Button" style=" font-size: 20px; margin-left: 30px;margin-bottom: 15px" type="button" value="refresh" onclick="to()">
+               <a href="finalNew.html" style="text-decoration: none; color: white">Submit</a> 
+                </button>&nbsp;&nbsp;&nbsp;
+            <button class="Button" style="font-size: 20px; margin-right: 30px;margin-bottom: 15px" type="button" value="submit" onclick="window.location.reload()"><a href="NewQuiz.html" style="text-decoration: none; color: white">Refresh</a></button>
+         
+            
+            
+            </div>
+            <div class="EOP"><hr id="left">End of Page<hr id="right"></div>
+        </div>
+        <div class="afterIndex"><hr></div>
+        <footer>
+                Copyrights&copy; 2020 GAK<span>:</span> Designed by GAK
+        </footer>
+    </body>
+</html>
